@@ -13,6 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "merkletreejs": "^0.3.11"
+    "merkletreejs": "^0.3.10"
   }
 }
