@@ -1,5 +1,5 @@
 {
-  "name": "paytr-protocol",
+  "name": "paytr",
   "version": "1.0.0",
   "description": "Paytr protocol smart contracts",
   "main": "truffle-config.js",
