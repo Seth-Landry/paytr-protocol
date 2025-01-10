@@ -1,1 +1,9 @@
-nohup: ignoring input and appending output to 'nohup.out'
+npm warn exec The following package was not found and will be installed: ganache-cli@6.12.2
+npm warn deprecated ganache-cli@6.12.2: ganache-cli is now ganache; visit https://trfl.io/g7 for details
+eth_accounts
+eth_blockNumber
+net_version
+eth_accounts
+eth_blockNumber
+net_version
+eth_accounts
