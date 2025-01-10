@@ -1,5 +1,6 @@
 {
   "tasks": {
-    "test": "truffle test"
+    "test": "truffle test",
+    "build": "truffle compile"
   }
 }
