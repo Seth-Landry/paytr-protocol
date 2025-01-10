@@ -2,7 +2,7 @@ pragma solidity ^0.8.0;
 
 contract Paytr {
     mapping(address => uint256) private balances;
-
+    
     event Deposit(address indexed user, uint256 amount);
     event Withdrawal(address indexed user, uint256 amount);
 
