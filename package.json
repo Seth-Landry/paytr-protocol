@@ -1,18 +1,20 @@
 {
-  "name": "workspace-blank",
+  "name": "paytr",
   "version": "1.0.0",
-  "description": "This repository is empty. Any task executed on it should be considered a new capability and needs to be created.",
+  "description": "Paytr protocol smart contracts",
   "main": "truffle-config.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "truffle test",
+    "build": "truffle compile",
+    "launch": "truffle develop"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "merkletreejs": "^0.3.10"
-  }
+  },
+  "devDependencies": {
+    "truffle": "^5.4.29",
+    "web3": "^1.5.2"
+  },
+  "author": "",
+  "license": "ISC"
 }
