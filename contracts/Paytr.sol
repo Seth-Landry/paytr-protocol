@@ -6,13 +6,13 @@ contract Paytr {
     event Deposit(address indexed user, uint256 amount);
     event Withdrawal(address indexed user, uint256 amount);
 
-    function deposit() public payable {
+    function deposit() external payable {
         require(msg.value > 0, "Deposit amount must be greater than zero");
         balances[msg.sender] += msg.value;
         emit Deposit(msg.sender, msg.value);
     }
 
-    function withdraw(uint256 amount) public {
+    function withdraw(uint256 amount) external {
         require(amount > 0, "Withdrawal amount must be greater than zero");
         require(balances[msg.sender] >= amount, "Insufficient balance");
         balances[msg.sender] -= amount;
@@ -20,7 +20,7 @@ contract Paytr {
         emit Withdrawal(msg.sender, amount);
     }
 
-    function getBalance() public view returns (uint256) {
+    function getBalance() external view returns (uint256) {
         return balances[msg.sender];
     }
 }
