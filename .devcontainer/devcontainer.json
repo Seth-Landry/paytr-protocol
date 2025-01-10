@@ -1,7 +1,15 @@
 {
-  "tasks": {
-    "test": "truffle test",
-    "build": "truffle compile",
-    "launch": "truffle develop"
-  }
+  "name": "Paytr Protocol Dev Container",
+  "dockerFile": "Dockerfile",
+  "context": "..",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-vscode.vscode-typescript-tslint-plugin",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "solidity"
+  ],
+  "postCreateCommand": "npm install"
 }
