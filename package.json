@@ -16,9 +16,5 @@
   "devDependencies": {
     "truffle": "^5.3.14",
     "web3": "^1.3.6"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "keywords": []
+  }
 }
