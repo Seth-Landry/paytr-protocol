@@ -5,15 +5,17 @@
   "main": "truffle-config.js",
   "scripts": {
     "test": "truffle test",
-    "migrate": "truffle migrate"
+    "migrate": "truffle migrate",
+    "lint": "solhint 'contracts/**/*.sol'",
+    "lint:fix": "solhint 'contracts/**/*.sol' --fix"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "truffle": "^5.4.29"
+    "@openzeppelin/contracts": "^4.3.2"
   },
   "devDependencies": {
-    "chai": "^4.3.4",
-    "mocha": "^9.1.3"
+    "solhint": "^3.3.6",
+    "truffle": "^5.4.11"
   }
 }
