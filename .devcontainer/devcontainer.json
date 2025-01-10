@@ -1,6 +1,7 @@
 {
   "tasks": {
     "test": "truffle test",
-    "build": "truffle compile"
+    "build": "truffle compile",
+    "launch": "truffle develop"
   }
 }
