@@ -8,5 +8,10 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode"
   ],
-  "postCreateCommand": "npm install"
+  "postCreateCommand": "npm install",
+  "tasks": {
+    "test": "npm install && npm test",
+    "build": "npm install",
+    "launch": "truffle migrate"
+  }
 }
