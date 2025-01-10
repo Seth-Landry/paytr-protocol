@@ -1,21 +1,20 @@
 {
-  "name": "paytr-protocol",
+  "name": "paytr",
   "version": "1.0.0",
   "description": "Paytr protocol smart contracts",
   "main": "truffle-config.js",
   "scripts": {
     "test": "truffle test",
-    "migrate": "truffle migrate",
-    "lint": "solhint 'contracts/**/*.sol'",
-    "lint:fix": "solhint 'contracts/**/*.sol' --fix"
+    "migrate": "truffle migrate"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.3.2"
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
-    "solhint": "^3.3.6",
-    "truffle": "^5.4.11"
+    "truffle": "^5.3.7",
+    "solc": "^0.8.0"
   }
 }
