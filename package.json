@@ -1,10 +1,11 @@
 {
   "name": "paytr-protocol",
   "version": "1.0.0",
-  "description": "Paytr protocol smart contracts",
+  "description": "Paytr Protocol Smart Contracts",
   "main": "truffle-config.js",
   "scripts": {
-    "test": "truffle test"
+    "test": "truffle test",
+    "migrate": "truffle migrate"
   },
   "author": "",
   "license": "ISC",
