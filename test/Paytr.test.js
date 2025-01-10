@@ -105,4 +105,17 @@ contract("Paytr", accounts => {
       assert.include(error.message, "Insufficient balance", "Incorrect error message for excessive withdrawal");
     }
   });
+
+  it("should return the correct balance for a user", async () => {
+    const paytrInstance = await Paytr.deployed();
+    const depositAmount = web3.utils.toWei("1", "ether");
+    const withdrawAmount = web3.utils.toWei("0.5", "ether");
+
+    await paytrInstance.deposit({ from: user1, value: depositAmount });
+    await paytrInstance.withdraw(withdrawAmount, { from: user1 });
+
+    const balance = await paytrInstance.getBalance({ from: user1 });
+    const expectedBalance = web3.utils.toWei("0.5", "ether");
+    assert.equal(balance.toString(), expectedBalance, "Balance is incorrect");
+  });
 });
