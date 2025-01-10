@@ -13,7 +13,8 @@ contract Paytr {
     }
 
     function withdraw(uint256 amount) public {
-        require(amount <= balances[msg.sender], "Insufficient balance");
+        require(amount > 0, "Withdrawal amount must be greater than zero");
+        require(balances[msg.sender] >= amount, "Insufficient balance");
         balances[msg.sender] -= amount;
         payable(msg.sender).transfer(amount);
         emit Withdrawal(msg.sender, amount);
