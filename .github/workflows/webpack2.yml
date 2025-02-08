@@ -1,24 +1,14 @@
-name: NodeJS with Webpack
-
-on: [push, pull_request]
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '22.x'
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Install Webpack CLI
-      run: npm install -D webpack-cli
-
-    - name: Build
-      run: npx webpack
+module.exports = {
+  // other configurations
+  resolve: {
+    extensions: ['.wasm', '.mjs', '.js', '.json']
+  },
+  module: {
+    rules: [
+      {
+        test: /\.wasm$/,
+        type: 'webassembly/async'
+      }
+    ]
+  }
+};
